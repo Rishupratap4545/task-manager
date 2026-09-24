@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Task Manager</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Task manager</h1>
+        <p>Manage your college tasks and assignments</p>
+    </header>
+
+    <main>
+
+        <!-- Dashboard -->
+        <section>
+            <h2>Dashboard</h2>
+
+            <div>
+                <h3>Total Tasks</h3>
+                <p>0</p>
+            </div>
+
+            <div>
+                <h3>Pending Tasks</h3>
+                <p>0</p>
+            </div>
+
+            <div>
+                <h3>Completed Tasks</h3>
+                <p>0</p>
+            </div>
+        </section>
+
+
+        <!-- Add Task -->
+        <section>
+            <h2>Add Task</h2>
+
+            <form>
+
+                <label for="task">Task Name:</label>
+                <input type="text" id="task" placeholder="Enter task name">
+
+                <label for="priority">Priority:</label>
+                <select id="priority">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+
+                <label for="due-date">Due Date:</label>
+                <input type="date" id="due-date">
+
+                <button type="submit">Add Task</button>
+
+            </form>
+        </section>
+
+
+        <!-- Filters -->
+        <section>
+            <h2>My Tasks</h2>
+
+            <button>All</button>
+            <button>Pending</button>
+            <button>Completed</button>
+        </section>
+
+
+        <!-- Task List -->
+        <section>
+
+            <article>
+                <input type="checkbox">
+
+                <h3>Complete Data Structures Assignment</h3>
+
+                <p>Priority: High</p>
+                <p>Due Date: 28 September 2026</p>
+
+                <button>Edit</button>
+                <button>Delete</button>
+            </article>
+
+
+            <article>
+                <input type="checkbox">
+
+                <h3>Digital Logic Assignment</h3>
+
+                <p>Priority: Medium</p>
+                <p>Due Date: 30 September 2026</p>
+
+                <button>Edit</button>
+                <button>Delete</button>
+            </article>
+
+        </section>
+
+    </main>
+    
+</body>
+</html>
